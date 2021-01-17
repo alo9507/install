@@ -12,7 +12,7 @@
     "install:chainlink:adapters": "git clone https://github.com/octobay/chainlink-adapters && cd chainlink-adapters && yarn && cp .env.sample .env && cp -rf jobs ./../.jobs",
     "evm": "cd contracts && ganache-cli -l 8000000 -m $1",
     "evm:gsn": "cd contracts && npx gsn start -w ./build/gsn",
-    "evm:deploy": "rm -rf contracts/build/contracts && node pre-deploy && cd contracts && truffle migrate --f 1 --to 3 --network development && cd .. && yarn chainlink:jobs:create && cd contracts && truffle migrate --f 4 --to 5 --network development && cd .. && node post-deploy",
+    "evm:deploy": "rm -rf contracts/build/contracts && node pre-deploy && cd contracts && truffle migrate --f 1 --to 3 --network development && cd .. && yarn chainlink:jobs:create && cd contracts && truffle migrate --f 4 --to 6 --network development && cd .. && node post-deploy",
     "evm:test": "cd contracts && truffle test",
     "chainlink:node": "cd chainlink && chainlink local start",
     "chainlink:adapters": "node configure-adapters && cd chainlink-adapters && yarn start",
