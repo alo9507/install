@@ -9,7 +9,7 @@ const rl = readline.createInterface({
 
 if (!process.env.GITHUB_CLIENT_ID) {
   rl.question('GitHub Client ID? ', githubClientId => {
-    sh.sed('-i', /^GITHUB_CLIENT_ID=.*$/, 'GITHUB_CLIENT_ID=' + githubClientId, './.app/.env')
+    sh.sed('-i', /^GITHUB_CLIENT_ID=.*$/, 'GITHUB_CLIENT_ID=' + githubClientId, './app/.env')
     rl.close()
   })
 } else {
