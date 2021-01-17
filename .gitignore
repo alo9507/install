@@ -1,6 +1,9 @@
 node_modules
-.app
-.evm
-.chainlink
+app
+api
+contracts
+chainlink
+chainlink-adapters
+.jobs
 yarn-error.log
 package-lock.json
