@@ -12,7 +12,7 @@ Clone the repository and install its dependencies.
 git clone https://github.com/octobay/install octobay && cd octobay && yarn
 ```
 
-Now start the local Ethereum node, the Gas Station Network and the Chainlink node and its adapters, all in their own terminal sessions.
+Now start the local Ethereum node, the Gas Station Network, the Chainlink node and its adapters and the API for the web app, all in their own terminal sessions.
 
 ```bash
 yarn evm
@@ -33,6 +33,10 @@ When running the adapters for the first time, you will be asked to provide your 
 
 ```bash
 yarn chainlink:adapters
+```
+
+```bash
+yarn app:api
 ```
 
 ## Deploy Contracts
