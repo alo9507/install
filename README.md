@@ -37,8 +37,6 @@ yarn evm
 yarn evm:gsn
 ```
 
-When running the Chainlink node for the first time, you will be asked to set an email address and a password. You'll need those in the next step.
-
 ```bash
 yarn chainlink:node
 ```
@@ -55,7 +53,7 @@ yarn app:api
 
 ## Deploy Contracts
 
-When running for the first time, you will be asked to provide your Chainlink node's address. Open http://localhost:6688/config in your browser (`yarn chainlink:node` must be running), login using your email and password from before, and copy the `ACCOUNT_ADDRESS`. Now you can deploy the contracts. During deployment you will also have to log in to your Chainlink node, so the necessary job specifications can be created for you.
+When running for the first time, you will be asked to provide your Chainlink node's address. Open http://localhost:6688/config in your browser, login with `test@example.org` and password `11111111` and copy the `ACCOUNT_ADDRESS`. Now you can deploy the contracts. During deployment you will also have to log in to your Chainlink node, so the necessary job specifications can be created for you.
 
 ```bash
 yarn evm:deploy
