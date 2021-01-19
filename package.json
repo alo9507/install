@@ -20,7 +20,7 @@
     "chainlink:jobs:create": "yarn chainlink:login && node create-chainlink-jobs",
     "app": "cd app && yarn app:dev",
     "app:api": "cd api && yarn start",
-    "git:status": "git status && cd api && git status && cd ../app && git status && cd ../contracts && git status && cd ../chainlink-adapters && git status"
+    "git:status": "echo '\nInstaller:' && git status && cd api && echo '\nApi:' && git status && cd ../app && echo '\nApp:' && git status && cd ../contracts && echo '\nContracts:' && git status && cd ../chainlink-adapters && echo '\nChainlink Adapters:' && git status"
   },
   "author": "",
   "license": "ISC",
