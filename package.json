@@ -19,7 +19,8 @@
     "chainlink:login": "cd chainlink && chainlink admin login -f .api-login",
     "chainlink:jobs:create": "yarn chainlink:login && node create-chainlink-jobs",
     "app": "cd app && yarn app:dev",
-    "app:api": "cd api && yarn start"
+    "app:api": "cd api && yarn start",
+    "git:status": "git status && cd api && git status && cd ../app && git status && cd ../contracts && git status && cd ../chainlink-adapters && git status"
   },
   "author": "",
   "license": "ISC",
